@@ -1,0 +1,48 @@
+name: City Incident
+
+description: Report a city operations incident
+
+title: "[INCIDENT] "
+
+labels:
+  - incident
+
+body:
+
+  - type: input
+    id: service
+    attributes:
+      label: Service
+      description: Which city service is affected?
+      placeholder: Lighting
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where is the incident?
+      placeholder: Sector 21
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Incident description
+      description: Describe the problem.
+      placeholder: 18 streetlights are not working.
+    validations:
+      required: true
