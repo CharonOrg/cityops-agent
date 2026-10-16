@@ -1,9 +1,6 @@
 name: City Incident
-
 description: Report a city operations incident
-
 title: "[INCIDENT] "
-
 labels:
   - incident
 
