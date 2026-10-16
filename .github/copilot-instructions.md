@@ -43,6 +43,21 @@ Never:
 - bypass branch protection;
 - execute destructive commands.
 
+## State
+
+Use issue labels to communicate workflow state.
+
+Valid states:
+
+- agent:new
+- agent:investigating
+- agent:planned
+- agent:implementing
+- agent:review
+- agent:resolved
+
+Do not claim a state transition that did not occur.
+
 ## Agent Workflow
 
 Before implementation:
@@ -50,7 +65,8 @@ Before implementation:
 1. Read the issue.
 2. Inspect the repository.
 3. Identify affected files.
-4. Create a plan.
+4. Investigate the requirement.
+5. Create a plan.
 
 During implementation:
 
